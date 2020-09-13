@@ -1,10 +1,23 @@
 const { Comment } = require("../../db/models");
-
+const { User } = require("../../db/models");
 module.exports = {
+  get: async (req, res, next) => {
+    try {
+      const comment = await Comment.findAll({
+        include: {
+          model: User,
+        },
+      });
+      res.json(comment);
+    } catch (err) {
+      console.log(err);
+      next(err);
+    }
+  },
   post: async (req, res, next) => {
     try {
       const comment = await Comment.create({
-        userId: req.body.id,
+        userId: req.body.userid,
         comment: req.body.comment,
       });
       console.log(comment);

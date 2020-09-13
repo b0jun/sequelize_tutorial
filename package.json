@@ -2,7 +2,7 @@
   "name": "sequelize_tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
     "morgan": "^1.10.0",
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"
   }
