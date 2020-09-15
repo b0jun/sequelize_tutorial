@@ -22,21 +22,13 @@
               <th>이메일</th>
             </tr>
           </thead>
-          <tbody>
-            {% for user in users %}
-            <tr>
-              <td>{{user.id}}</td>
-              <td>{{user.name}}</td>
-              <td>{{user.email}}</td>
-            </tr>
-            {% endfor %}
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
       <div id="comments" class="wrapper">
         <form id="comment-form">
           <legend>댓글 등록</legend>
-          <div><input id="userid" type="text" placeholder="유저이름" /></div>
+          <div><input id="userid" type="text" placeholder="유저ID" /></div>
           <div><input id="comment" type="text" placeholder="댓글" /></div>
           <button type="submit">등록</button>
         </form>

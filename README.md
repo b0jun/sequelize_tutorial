@@ -1,4 +1,18 @@
-### API
+<img src="public/assets/chat.png"/>
+
+## 🔎 기능
+
+- User Form 제출 시 UsersTable 레코드 추가
+- Comment Form 제출 시 CommentsTable 레코드 추가
+- 이름 클릭 시 필터링
+
+## 🔬 TECH
+
+- JavaScript
+- Sequelize(ORM)
+- Express
+
+## 📋 API 문서
 
 | Method               | Description              |
 | -------------------- | ------------------------ |

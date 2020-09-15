@@ -39,7 +39,30 @@ table {
   text-align: center;
 }
 
+table th {
+  background: #407088;
+}
+
 table th,
 table td {
   border: 2px solid black;
+}
+
+.edit,
+.remove {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit:hover,
+.remove:hover {
+  background: #faf3dd;
+}
+
+.filter {
+  cursor: pointer;
+  font-weight: bold;
+}
+.filter:hover {
+  text-decoration: underline;
 }

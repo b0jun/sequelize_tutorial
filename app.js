@@ -6,6 +6,7 @@ const nunjucks = require("nunjucks");
 const indexRouter = require("./src/routes");
 const userRouter = require("./src/routes/users");
 const commentRouter = require("./src/routes/comments");
+// const { sequelize } = require("./src/db/models");
 
 const app = express();
 const PORT = 5000;
@@ -16,6 +17,12 @@ nunjucks.configure("src/views", {
   express: app,
   watch: true,
 });
+// sequelize
+//   .sync({ force: false })
+//   .then(() => {
+//     console.log("DB연결 성공");
+//   })
+//   .catch((err) => console.error(err));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
